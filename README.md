@@ -1,6 +1,5 @@
 # iWeather
-![Simulator Screenshot - iPhone 15 Pro - 2025-01-17 at 22 39 41](https://github.com/user-attachments/assets/37753fe4-5f28-4e9c-9d31-ed704f933d3e)
-
+![Simulator Screenshot - iPhone 15 Pro - 2025-01-20 at 07 25 34(1)](https://github.com/user-attachments/assets/39b969b4-3da5-4d35-af23-c2745902d342)
 
 iWeather is a beautifully designed iOS application that provides real-time weather updates for your current location or any city worldwide. Built using Swift and SwiftUI, the app offers a simple and intuitive interface to display accurate weather data and forecasts.
 
