@@ -11,12 +11,25 @@ struct ContentView: View {
     
     // to get the view notified when the LocationManager updated
     @StateObject var locationManager = LocationManager()
+    var weatheManager = WeatherManager()
+    @State var weather: ResponseBody?
     
     var body: some View {
         VStack {
             
             if let location = locationManager.location {
-                Text("Your coordinates are:  \(location.longitude), \(location.latitude)")
+                //Text("Your coordinates are:  \(location.longitude), \(location.latitude)")
+                if let weather = weather {
+                    WeatherView(weather: weather)
+                } else {
+                    LoadingView().task {
+                        do {
+                            weather = try await weatheManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                        } catch {
+                            print("Error getting weather: \(error)")
+                        }
+                    }
+                }
             } else {
                 if locationManager.isLoading {
                     LoadingView()

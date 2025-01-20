@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 113.4002,
+    "lat": -1.8989
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 296.65,
+    "feels_like": 29.61,
+    "temp_min": 296.65,
+    "temp_max": 296.65,
+    "pressure": 1008,
+    "humidity": 98,
+    "sea_level": 1008,
+    "grnd_level": 1004
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.03,
+    "deg": 6,
+    "gust": 3.15
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1737303608,
+  "sys": {
+    "country": "ID",
+    "sunrise": 1737239429,
+    "sunset": 1737283393
+  },
+  "timezone": 25200,
+  "id": 1641898,
+  "name": "Central Kalimantan",
+  "cod": 200
+}
